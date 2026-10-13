@@ -16,5 +16,11 @@ pipeline {
                 sh 'java -cp src application.Test'
             }
         }
+        stage ('test message')
+        {
+            steps {
+               echo 'Hi grom Github'
+            }
+        }
     }
 }
