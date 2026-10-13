@@ -20,6 +20,7 @@ pipeline {
         {
             steps {
                echo 'Hi grom Github'
+               echo 'hi grom Github'
             }
         }
     }
