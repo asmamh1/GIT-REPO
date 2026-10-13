@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/asmamh1/GIT-REPO.git'
+            }
+        }
+        stage('Compile code') {
+            steps {
+                sh 'javac src/application/Test.java'
+            }
+        }
+        stage('Execute code') {
+            steps {
+                sh 'java -cp src application.Test'
+            }
+        }
+    }
+}
