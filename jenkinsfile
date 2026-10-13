@@ -19,7 +19,8 @@ pipeline {
         stage ('test message')
         {
             steps {
-               echo 'Hi grom Github'
+                echo 'Hi grom Github'
+                echo 'hi grom Github'
             }
         }
     }
